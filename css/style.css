@@ -23,9 +23,9 @@ p {
     height: 100px; /* Whatever you want. */
     background-color: #426196;
     border-bottom: none;
-    -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
-    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.2);
     margin-bottom: 0 !important;
 }
 
@@ -104,15 +104,16 @@ li.nav-item {
   padding-left: 40px;
 }
 
-.intro-wrapper {
+.wrapper {
   width: 100%;
-  padding: 100px 40px !important;
   padding-top: 0;
 }
 
-.intro-container {
+.container {
   max-width: 960px;
   margin: 0 auto;
+  padding: 100px 40px !important;
+
 }
 
 .navbar-inverse .navbar-toggle {
@@ -134,7 +135,7 @@ li.nav-item {
 
 .navbar.navbar-inverse .navbar-collapse {
     border-color: rgba(255,255,255,0.1);
-    -webkit-box-shadow: none;
+
     box-shadow: none;
 }
 
@@ -142,6 +143,10 @@ li.nav-item {
   background-color: #426196;
 }
 
+.red {
+  background-color: red;
+  height: 500px;
+}
 
 @media (max-width: 768px) {
     .navbar-header {
@@ -167,13 +172,49 @@ li.nav-item {
         padding-top: 10px;
         padding-bottom: 10px;
     }
+.navbar-fixed-top {
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.2);
+}
+
+
+    #navbar-collapse-1 {
+      background-color: #426196;
+      -webkit-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.2);
+      -moz-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.2);
+      box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.2);
+    }
 
     .nav-item {
-      height: 50px;
-      line-height: 50px;
+      height: 75px;
+      line-height: 75px;
       margin: 0 !important;
+      border-top: 1px solid transparent;
+      margin-bottom:  !important;
+      -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
+      -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
+      box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.2);
     }
+    .nav-item:nth-child(1) {
+      background-color: #426196;
+      z-index: 9;
+
+    }
+    .nav-item:nth-child(2) {
+      background-color: #F1D776;
+      z-index: 8;
+
+    }
+    .nav-item:nth-child(3) {
+      background-color: #3BBBB2;
+      z-index: 7;
+
+    }
+
 }
+
+
 
 
 @media (max-width: 480px) {
