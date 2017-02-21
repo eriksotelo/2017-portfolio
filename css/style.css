@@ -174,3 +174,17 @@ li.nav-item {
       margin: 0 !important;
     }
 }
+
+
+@media (max-width: 480px) {
+  .sail-font {
+    text-align: center;
+  }
+  .sm {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+
+}
